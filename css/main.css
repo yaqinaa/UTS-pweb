@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background: black;
+}
+
+.v1_229 {
+  width: 20vw; /* Gunakan persentase supaya bisa menyesuaikan */
+   max-width: 400px; /* Batasi agar tidak terlalu besar */
+   height: 20vw;
+   max-height: 400px;
+   background: rgba(239, 241, 197, 14);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 50%;
+   filter: blur(20px);
+}
+.v1_230 {
+   width: 95%;
+   height: 88vh;
+   background: rgba(32, 32, 48, 0.9);
+   position: relative;
+   margin: 50px auto;
+   border-radius: 50px;
+   overflow: hidden;
+   padding: 20px; /* Biar lebih rapi di dalam */
+}
+
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between; /* Taruh elemen di kiri & kanan */
+  align-items: center; /* Rata vertikal */
+  padding: 10px 2px; /* Jarak biar ga mepet */
+  width: calc(100% - 100px); /* Supaya tetap ada margin kiri-kanan */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  top: 20px;
+}
+
+.footer {
+  bottom: 20px;
+}
+
+.row {
+ display: flex;
+ justify-content: space-between; 
+ width: 50%;
+ white-space: nowrap; /* Biar teks nggak pecah ke bawah */
+}
+
+
+
+/* Style teksnya */
+.v1_231, .v1_234, .v1_237, .v1_242 {
+  font-family: Orbitron;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1vw; /* Biar ukuran teks fleksibel */
+  }
+
+.v1_243 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Biar tetap di tengah */
+  text-align: center;
+}
+
+
+.v1_245 {
+  font-family: Orbitron, sans-serif;
+    font-size: 3vw;
+    font-weight: normal;
+    color: white;
+    display: block; /* Supaya tetap diatur secara vertikal */
+    margin-bottom: 10px;
+}
+.v1_246 {
+   font-family: Orbitron, sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+.v1_247 {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style untuk tiap profesi */
+.v1_248, .v1_250 {
+    display: inline-block;
+    padding: 5px 25px;
+    border-radius: 30px;
+    background-color: rgba(239, 241, 197, 0.8);
+    margin: 10px 5px;
+}
+
+/* Teks dalam profesi */
+.v1_249, .v1_251 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+}
+
+.hobbies {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hobby-btn {
+    padding: 10px 15px;
+    background-color: rgba(189, 189, 150, 0.8);
+    color: black;
+    font-family: Orbitron, sans-serif;
+    font-size: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hobby-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+
+.v1_253 {
+    width: 60%; /* Lebar menyesuaikan dengan viewport */
+    max-width: 572px; /* Lebar maksimum */
+    height: 4vw; /* Tinggi otomatis sesuai konten */
+    background: rgba(61, 61, 61, 0.5); /* Warna latar belakang dengan transparansi */
+    padding: 5px 2%; /* Padding responsif */
+    margin: 0 auto; /* Pusatkan elemen secara horizontal */
+    opacity: 1;
+    position: fixed; /* Tetap di posisi saat di-scroll */
+    bottom: 25px; /* Jarak dari bawah viewport */
+    left: 50%; /* Posisikan di tengah secara horizontal */
+    transform: translateX(-50%); /* Pusatkan elemen secara horizontal */
+    border-radius: 50px; /* Sudut membulat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Pastikan elemen berada di atas elemen lainnya */
+}
+
+.v1_254, .v1_255, .v1_256, .v1_257 {
+    padding: 1vw 2vw;
+    background-color: rgba(61, 61, 61, 0.1);
+    color: white;
+    font-family: Orbitron, sans-serif;
+    font-size: 1.2vw;
+    border: none;
+    border-radius: 20px;
+    margin: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    text-align: center;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover efek */
+.v1_254:hover, .v1_255:hover, .v1_256:hover, .v1_257:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* Pastikan cuma scale, gak ada margin/padding berubah */
+}
+
+/* Efek klik */
+.v1_254:active, .v1_255:active, .v1_256:active, .v1_257:active {
+    transform: scale(0.95);
+}
+
+.v1_254:hover, .v1_255:hover, .v1_256:hover, .v1_257:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Efek klik */
+.v1_254:active, .v1_255:active, .v1_256:active, .v1_257:active {
+    transform: scale(0.95);
+}
+
+
