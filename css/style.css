@@ -5,6 +5,22 @@
     border: none !important;
 }
 
+
+ #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* di bawah konten */
+  }
+
+  /* Pastikan konten di atas partikel */
+  .about-sec > .container {
+    position: relative;
+    z-index: 1;
+  }
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: #fff;
