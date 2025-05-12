@@ -27,7 +27,7 @@
 
 #logo {
    	width: 50px;          /* sesuaikan ukuran */
-	height: 50px;
+	  height: 50px;
   	object-fit: cover;    /* agar tidak gepeng */
   	border-radius: 50%;   /* bikin bulat */
   	border: 2px solid #ffffff33; /* opsional: beri border */
@@ -54,3 +54,38 @@
   color: #ccc;
 }
 
+/* Smartphone potrait dan kecil (<= 767px) */
+@media only screen and (max-width: 767px) {
+    #particles-js {
+        height: 100vh;
+        background-size: cover;
+        /* Tambah style responsif lainnya di sini */
+    }
+}
+
+/* Smartphone landscape dan tablet kecil (480px - 767px) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #particles-js {
+        height: 100vh;
+        background-size: contain;
+        /* Tambah style responsif lainnya di sini */
+    }
+}
+
+/* Tablet (768px - 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #particles-js {
+        height: 100vh;
+        background-size: contain;
+        /* Tambah style responsif lainnya di sini */
+    }
+}
+
+/* Laptop / desktop kecil (992px - 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #particles-js {
+        height: 100vh;
+        background-size: cover;
+        /* Tambah style responsif lainnya di sini */
+    }
+}
